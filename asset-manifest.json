@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/rjry_drug/static/css/main.24d318c6.css",
+    "main.js": "/rjry_drug/static/js/main.2ff11604.js",
+    "index.html": "/rjry_drug/index.html",
+    "main.24d318c6.css.map": "/rjry_drug/static/css/main.24d318c6.css.map",
+    "main.2ff11604.js.map": "/rjry_drug/static/js/main.2ff11604.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.24d318c6.css",
+    "static/js/main.2ff11604.js"
+  ]
+}
