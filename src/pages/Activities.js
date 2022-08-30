@@ -1,7 +1,18 @@
 import { Box, Typography } from '@mui/material'
-import React from 'react'
+import { useEffect, useState } from 'react'
 
 const Activities = () => {
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    fetch("/api")
+      .then(res=>res.json())
+      .then((data) => {
+        console.log(data);
+        setData(data.message)
+      });
+  }, []);
+
   return (
     <Box sx={{ width: '100%', maxWidth: 500 }}>
       <Typography variant="h1" gutterBottom>
@@ -9,8 +20,7 @@ const Activities = () => {
       </Typography>
 
       <Typography variant="subtitle1" gutterBottom>
-        subtitle1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
-        blanditiis tenetur
+        {data ? data : 'Loading...'}
       </Typography>
       <Typography variant="subtitle2" gutterBottom>
         subtitle2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
