@@ -15,6 +15,7 @@ export default function Navbar() {
         <CustomLink to="/certifications">Pensijilan</CustomLink>
         <CustomLink to="/gallery">Galeri</CustomLink>
         <CustomLink to="/contact">Hubungi kami</CustomLink>
+        <CustomLink to="/signup">Signup</CustomLink>
       </ul>
     </nav>
   )
